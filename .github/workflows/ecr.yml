@@ -9,7 +9,7 @@ permissions:
 
 jobs:
   terraform:
-    name: Terraform Apply or Destroy
+    name: Docker Image Build and Push
     runs-on: ubuntu-latest
 
     steps:
