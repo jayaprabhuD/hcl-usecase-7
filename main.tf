@@ -17,7 +17,7 @@ module "api" {
 }
 
 module "cloudwatch" {
-    source = "./modules/cloudwatch"
+    source = "./modules/api"
     log_group_name = "demo_api_cloudwatch_log_group"
     retention_in_days = 7
 
