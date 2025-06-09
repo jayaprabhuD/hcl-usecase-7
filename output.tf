@@ -1,3 +1,3 @@
-output "api_url" {
-    value = module.apigateway.api_endpoint
-}
+#output "api_url" {
+#    value = module.apigateway.api_endpoint
+#}
