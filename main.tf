@@ -15,3 +15,7 @@ module "api" {
     lambda_invoke_arn = module.lambda.invoke_arn
     lambda_arn = module.lambda.arn
 }
+
+module "cloudwatch" {
+    source = "./modules/cloudwatch"
+}

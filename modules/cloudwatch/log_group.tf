@@ -5,3 +5,7 @@ resource "aws_cloudwatch_log_group" "api_gw_logs" {
 
 
 variable "log_group_name" {}
+
+output "api_log_group_arn" {
+    value = aws_cloudwatch_log_group.api_gw_logs.arn
+}
