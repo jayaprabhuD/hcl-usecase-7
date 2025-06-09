@@ -75,7 +75,7 @@ jobs:
         run: terraform plan
 
       - name: Terraform Apply
-        if: contains(github.event.head_commit.message, 'terraform apply')
+        if: github.event_name == 'workflow_dispatch' && github.event.inputs.action == 'apply'
         run: terraform apply -auto-approve
 
       - name: Terraform Destroy
